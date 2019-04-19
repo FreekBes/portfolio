@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/freekbes
+--------------------------------------------------------------------
+
+I hereby claim:
+
+* I am an admin of https://freekb.es
+* I am freekbes (https://keybase.io/freekbes) on keybase.
+* I have a public key ASDYzIsQ4mBnw1Bx5m-MitMpisskvDbdEASPJCKTLTME4Qo
+
+To do so, I am signing this object:
+
+{
+"body": {
+"key": {
+"eldest_kid": "0120ccdbf4ac3ddf5747b88d5134da5de59eb819bb4fb0167f4dda02ae49d2be3d200a",
+"host": "keybase.io",
+"kid": "0120d8cc8b10e26067c35071e66f8c8ad3298acb24bc36dd10048f2422932d3304e10a",
+"uid": "bfaadf4eb7b10025ba0d961eafe54a19",
+"username": "freekbes"
+},
+"merkle_root": {
+"ctime": 1542061041,
+"hash": "51198ad994b7b41965a7e5bda461827456f4bb30bcfe1c6c6ba5f625aafe8aaf236e66a896a25e3b4a941c91c3eb916d70175e1768f1e1fcb5c60f4fbca0fa6b",
+"hash_meta": "7a6aa931c3b107a237bef2dfbad65ae945d4d0e8cb429f0aba2e165eb2c421a5",
+"seqno": 3941461
+},
+"service": {
+"entropy": "yHOMHBFto7pM63nNMmYqU7mv",
+"hostname": "freekb.es",
+"protocol": "https:"
+},
+"type": "web_service_binding",
+"version": 2
+},
+"client": {
+"name": "keybase.io go client",
+"version": "2.8.0"
+},
+"ctime": 1542061052,
+"expire_in": 504576000,
+"prev": "77b23e8c514cfd321fc9557638a7d59ed1d47a022c6afee7f917caa8d51b8e2d",
+"seqno": 24,
+"tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEg2MyLEOJgZ8NQceZvjIrTKYrLJLw23RAEjyQiky0zBOEKp3BheWxvYWTESpcCGMQgd7I+jFFM/TIfyVV2OKfVntHUegIsav7n+RfKqNUbji3EIO55KE8YaeFmE0+NNeCvlTYs0pSTvJvsXyRppFcJYi13AgHCo3NpZ8RA78odMDX5bBGnSYI1yec0omCTYddx0fIDzBgkWXmkvlondiaIFRUP0gsNelgwKOzC+7PgeKkwt3YyfrtnNErTAahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIH6tdYQiwFMIB1KPi0rKxTCJoZtvJ8Uu0HU/2txx5DYEo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/freekbes
+
+==================================================================

@@ -1,0 +1,423 @@
+html {
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	
+	background: linear-gradient(to bottom, #0000cc, #029cbf);
+	background: -moz-linear-gradient(to bottom, #0000cc, #029cbf);
+	background: -webkit-linear-gradient(to bottom, #0000cc, #029cbf);
+	background: -ie-linear-gradient(to bottom, #0000cc, #029cbf);
+	background: -o-linear-gradient(to bottom, #0000cc, #029cbf);
+	background-repeat: no-repeat;
+	background-color: #029cbf;
+}
+
+body {
+	font-family: Roboto, Arial, Sans-Serif;
+	font-weight: 300;
+	font-size: 15px;
+	color: #EDEDED;
+	margin: 0px;
+	padding: 0px;
+	cursor: default;
+	text-shadow: 0 0 1px #000;
+}
+
+b {
+	font-weight: 500;
+}
+
+a, a:visited {
+	color: #00cc00;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #00ff00;
+}
+
+img {
+	pointer-events: none !important;
+}
+
+.content {
+	display: block;
+	margin: 32px auto;
+	max-width: 604px;
+	padding: 0px 16px;
+	border-radius: 8px;
+}
+
+.card {
+	display: block;
+	background-color: rgba(0,0,0,0.5);
+	text-align: left;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-bottom: 8px;
+	border-radius: 8px;
+	backdrop-filter: blur(5px);
+}
+
+.card:first-child {
+	margin-top: 0px;
+}
+
+.card:last-child {
+	margin-bottom: 0px;
+}
+
+.card-title {
+	color: #EDEDED;
+	padding: 16px 8px 14px 8px;
+	text-decoration: none;
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	font-size: 19px;
+	text-align: center;
+	font-weight: 500;
+	background-color: rgba(0,0,0,0.3);
+	border-bottom: solid 2px #00cc00;
+	margin-bottom: 4px;
+	position: relative;
+	box-shadow: 0 0 4px rgba(0,0,0,.14), 0 4px 8px rgba(0,0,0,.28);
+}
+
+.card-content {
+	display: block;
+	padding: 0px;
+	word-break: break-word;
+}
+
+.card-content.notopmargin {
+	margin-top: -4px;
+}
+
+.card-content.nobottommargin {
+	margin-bottom: -4px;
+}
+
+h1 {
+	text-align: center;
+	font-weight: normal;
+	font-size: 40px;
+	margin: 32px 0px 48px 0px;
+	padding: 0px;
+	font-family: 'Russo One', sans-serif;
+	letter-spacing: 4px;
+	text-shadow: 0 0 3px #000;
+}
+
+h2 {
+	font-size: 19px;
+	font-weight: 500;
+	margin: 0px;
+	padding: 0px;
+}
+
+h3 {
+	margin: 0px;
+	padding: 0px;
+	font-weight: 500;
+	font-size: 19px;
+	margin-top: -7px;
+}
+
+p {
+	margin: 0px;
+	padding: 8px;
+}
+
+figure {
+	float: left;
+	width: 130px;
+	padding: 8px;
+	margin: -4px 0px;
+}
+
+#me {
+	width: 150px;
+	max-width: 100%;
+	border-radius: 4px;
+}
+
+.project, .aboutme {
+	display: table;
+	width: 100%;
+}
+
+.project figure {
+	float: initial;
+	display: table-cell;
+	width: 72px;
+	vertical-align: middle;
+}
+
+.aboutme figure {
+	float: initial;
+	display: table-cell;
+	vertical-align: top;
+}
+
+.project-img {
+	max-width: 100%;
+	width: 72px;
+	border-radius: 50%;
+}
+
+.projectdetails {
+	display: table-cell;
+	vertical-align: middle;
+	white-space: initial;
+	padding: 8px 8px 8px 0px;
+}
+
+.aboutme p {
+	display: table-cell;
+	vertical-align: top;
+	white-space: initial;
+	padding: 8px 8px 8px 0px;
+}
+
+.isnomore {
+	display: inline-block;
+	margin: 2px 0px;
+	padding: 2px 4px;
+	background-color: rgba(255,255,255,0.3);
+	color: #BABABA;
+	font-size: 11px;
+	text-transform: uppercase;
+	border-radius: 3px;
+}
+
+.projectinfo {
+	display: block;
+	margin-top: 2px;
+}
+
+ul {
+	margin: 0px;
+}
+
+ul.nobullets {
+	list-style-type: none;
+}
+
+ul.floaty {
+	list-style-type: none;
+	padding: 0px;
+	text-align: center;
+}
+
+li {
+	margin: 10px;
+}
+
+ul.floaty li {
+	display: inline-block;
+}
+
+.social {
+	padding: 4px 0px;
+	white-space: nowrap;
+}
+
+.favicon {
+	width: 20px;
+	height: 20px;
+}
+
+.favicon-name {
+	padding-left: 4px;
+	line-height: 20px;
+}
+
+.vertalign {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+::-moz-selection {
+	color: #EDEDED;
+	background-color: #CC0000;
+	text-shadow: initial;
+}
+
+::selection {
+	color: #EDEDED;
+	background-color: #CC0000;
+	text-shadow: initial;
+}
+
+/* lazy tuneplay integration */
+table.yir-table {
+	display: inline-table;
+	border-collapse: collapse;
+	text-align: left;
+	width: 100%;
+	max-width: 100%;
+}
+
+table.yir-table.nospan {
+	width: initial;
+	min-width: 500px;
+}
+
+table.yir-table td {
+	padding: 4px 8px;
+	margin: 0px;
+	border: none;
+	vertical-align: middle;
+}
+
+.pos {
+	font-size: 32px;
+	min-width: 54px;
+	font-weight: 400;
+	text-align: center;
+	color: #FFCB2E;
+}
+
+.image {
+	padding: 4px 0px;
+	width: 96px;
+	height: 96px;
+}
+
+.image img {
+	width: inherit;
+	margin-top: 4px;
+	border-radius: 3px;
+}
+
+.info {
+	padding: 4px 16px;
+}
+
+.toptext {
+	display: block;
+	font-size: 21px;
+	color: #EDEDED;
+}
+
+.bottomtext {
+	display: block;
+	font-size: 17px;
+	color: #B9B9B9;
+}
+
+.toptext a, .bottomtext a {
+	color: inherit;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.toptext a:hover, .bottomtext a:hover {
+	text-decoration: underline;
+}
+
+.extratext {
+	display: block;
+	font-size: 13px;
+	margin-top: 4px;
+	color: #9A9A9A;
+}
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 32px;
+		letter-spacing: 2px;
+	}
+	
+	.card-content.notopmargin {
+		margin-bottom: -4px;
+	}
+	
+	.aboutme {
+		display: block;
+	}
+	
+	.aboutme figure {
+		display: block;
+		float: initial;
+		width: 100%;
+		padding: 8px 0px;
+		text-align: center;
+	}
+	
+	.aboutme p {
+		display: block;
+		padding: 8px;
+		text-align: center;
+	}
+	
+	.project figure {
+		width: 56px;
+	}
+	
+	h3 {
+		font-size: 17px;
+	}
+	
+	.isnomore {
+		font-size: 9px;
+	}
+	
+	.projectdetails {
+		font-size: 13px;
+	}
+	
+	a:hover {
+		color: #00cc00;
+	}
+	
+	table.yir-table.nospan {
+		width: 100%;
+		min-width: initial;
+	}
+	
+	table.yir-table tr {
+		display: block;
+		float: left;
+		width: 100%;
+	}
+	
+	table.yir-table td {
+		display: table-cell;
+	}
+	
+	table.yir-table .image {
+		padding-right: 0px;
+	}
+	
+	.pos {
+		font-size: 23px;
+		min-width: 26px;
+	}
+	
+	.image {
+		width: 64px;
+		height: 64px;
+	}
+	
+	.info {
+		padding: 4px 8px;
+	}
+	
+	.toptext {
+		font-size: 17px;
+	}
+	
+	.bottomtext {
+		font-size: 15px;
+	}
+	
+	.extratext {
+		font-size: 11px;
+	}
+}
