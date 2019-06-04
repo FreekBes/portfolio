@@ -127,7 +127,7 @@
 						</figure>
 						<div class="projectdetails">
 							<a href="https://www.instagram.com/me_irl_bot" target="_blank"><h3>me_irl_bot</h3></a>
-							<span class="projectinfo">A bot which automatically pulls posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploads them to Instagram. It has over 100k followers.</span>
+							<span class="projectinfo">A bot which automatically pulls posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploads them to Instagram. It has over 150k followers.</span>
 						</div>
 					</div>
 					<div class="project">
@@ -147,16 +147,6 @@
 						<div class="projectdetails">
 							<a href="https://www.soundcloud.com/sponomace" target="_blank"><h3>Monospace</h3></a>
 							<span class="projectinfo">A trance-producing artist duo consisting of me and <a href="https://www.linkedin.com/in/amaro-berghout-464b81144" target="_blank">Amaro Berghout</a>.</span>
-						</div>
-					</div>
-					<div class="project">
-						<figure>
-							<img class="project-img" src="imgs/project-jengleplay-icon.png" alt="Jengle Play icon" />
-						</figure>
-						<div class="projectdetails">
-							<a href="http://play.jengle.nl" target="_blank"><h3>Jengle Play</h3></a>
-							<small class="isnomore">No longer accessible</small><br>
-							<span class="projectinfo">A Dutch music player on the Internet, a kind-of beta of TunePlay.</span>
 						</div>
 					</div>
 				</div>
