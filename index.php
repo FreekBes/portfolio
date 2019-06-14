@@ -132,16 +132,6 @@
 					</div>
 					<div class="project">
 						<figure>
-							<img class="project-img" src="imgs/project-assembl-icon.png" alt="Assembl icon" />
-						</figure>
-						<div class="projectdetails">
-							<a href="https://assembl.science" target="_blank"><h3>Assembl</h3></a>
-							<small class="isnomore">Coming soon</small><br>
-							<span class="projectinfo">A startup by <a href="https://slm.space/" target="_blank">Sebastian Mellen</a> and me, focusing on democratizing science.</span>
-						</div>
-					</div>
-					<div class="project">
-						<figure>
 							<img class="project-img" src="imgs/project-monospace-icon.png" alt="Monospace icon" />
 						</figure>
 						<div class="projectdetails">
