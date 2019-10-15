@@ -135,7 +135,7 @@
 							<img class="project-img" src="imgs/project-monospace-icon.png" alt="Monospace icon" />
 						</figure>
 						<div class="projectdetails">
-							<a href="https://sponomace.freekb.es/" target="_blank"><h3>Monospace</h3></a>
+							<a href="https://monospace.freekb.es/" target="_blank"><h3>Monospace</h3></a>
 							<span class="projectinfo">A trance-producing artist duo consisting of me and <a href="https://www.linkedin.com/in/amaro-berghout-464b81144" target="_blank">Amaro Berghout</a>.</span>
 						</div>
 					</div>
