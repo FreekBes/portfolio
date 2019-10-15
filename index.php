@@ -104,7 +104,7 @@
 						<figure>
 							<img id="me" src="imgs/me.jpg" alt="Freek Bes" />
 						</figure>
-						<p>Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames and taking pictures.<br><br>This is my little portfolio on the Internet, which includes links to my projects and social media. If you'd like to see my work experience, schooling and other stuff, please check my <a href="https://www.linkedin.com/in/freek-bes/" target="_blank">LinkedIn</a> instead.</p>
+						<p>Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames, producing music, and taking pictures.<br><br>This is my little portfolio on the Internet, which includes links to my projects and social media. If you'd like to see my work experience, schooling and other stuff, please check my <a href="https://www.linkedin.com/in/freek-bes/" target="_blank">LinkedIn</a> instead.</p>
 					</div>
 				</div>
 			</section>
@@ -126,8 +126,8 @@
 							<img class="project-img" src="imgs/project-meirlbot-icon.png" alt="me_irl_bot icon" />
 						</figure>
 						<div class="projectdetails">
-							<a href="https://www.instagram.com/me_irl_bot" target="_blank"><h3>me_irl_bot</h3></a>
-							<span class="projectinfo">A bot which automatically pulls posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploads them to Instagram. It has over 150k followers.</span>
+							<a href="https://www.instagram.com/me_irl_bot_official" target="_blank"><h3>me_irl_bot</h3></a>
+							<span class="projectinfo">A bot which automatically pulls posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploads them to Instagram. It had over 200k followers, until Instagram banned the original account.</span>
 						</div>
 					</div>
 					<div class="project">
@@ -135,7 +135,7 @@
 							<img class="project-img" src="imgs/project-monospace-icon.png" alt="Monospace icon" />
 						</figure>
 						<div class="projectdetails">
-							<a href="https://www.soundcloud.com/sponomace" target="_blank"><h3>Monospace</h3></a>
+							<a href="https://sponomace.freekb.es/" target="_blank"><h3>Monospace</h3></a>
 							<span class="projectinfo">A trance-producing artist duo consisting of me and <a href="https://www.linkedin.com/in/amaro-berghout-464b81144" target="_blank">Amaro Berghout</a>.</span>
 						</div>
 					</div>
