@@ -114,10 +114,19 @@
 				<div class="card-content">
 					<div class="project">
 						<figure>
+							<img class="project-img" src="imgs/project-monospace-icon.png" alt="Monospace icon" />
+						</figure>
+						<div class="projectdetails">
+							<a href="https://monospace.freekb.es/" target="_blank"><h3>Monospace</h3></a>
+							<span class="projectinfo">A trance-producing artist duo consisting of me and <a href="https://www.linkedin.com/in/amaro-berghout-464b81144" target="_blank">Amaro Berghout</a>.</span>
+						</div>
+					</div>
+					<div class="project">
+						<figure>
 							<img class="project-img" src="imgs/project-tuneplay-icon.png" alt="TunePlay icon" />
 						</figure>
 						<div class="projectdetails">
-							<a href="https://www.tuneplay.net" target="_blank"><h3>TunePlay</h3></a>
+							<a href="https://www.tuneplay.net/" target="_blank"><h3>TunePlay</h3></a>
 							<span class="projectinfo">An open music player which plays music from YouTube, Soundcloud, Deezer, Mixcloud and Spotify. It's available on the web, Windows and Android.</span>
 						</div>
 					</div>
@@ -126,17 +135,8 @@
 							<img class="project-img" src="imgs/project-meirlbot-icon.png" alt="me_irl_bot icon" />
 						</figure>
 						<div class="projectdetails">
-							<a href="https://www.instagram.com/me_irl_bot_official" target="_blank"><h3>me_irl_bot</h3></a>
+							<a href="https://github.com/FreekBes/insta_reddit_bot" target="_blank"><h3>me_irl_bot</h3></a>
 							<span class="projectinfo">A bot which automatically pulls posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploads them to Instagram. It had over 200k followers, until Instagram banned the original account.</span>
-						</div>
-					</div>
-					<div class="project">
-						<figure>
-							<img class="project-img" src="imgs/project-monospace-icon.png" alt="Monospace icon" />
-						</figure>
-						<div class="projectdetails">
-							<a href="https://monospace.freekb.es/" target="_blank"><h3>Monospace</h3></a>
-							<span class="projectinfo">A trance-producing artist duo consisting of me and <a href="https://www.linkedin.com/in/amaro-berghout-464b81144" target="_blank">Amaro Berghout</a>.</span>
 						</div>
 					</div>
 				</div>
