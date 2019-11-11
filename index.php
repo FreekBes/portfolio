@@ -148,6 +148,13 @@
 					<p style="text-align: center;">I also have a few smaller open source projects listed on <a href="https://github.com/FreekBes" target="_blank">my GitHub profile</a>.</p>
 				</div>
 			</section>
+
+			<section class="card">
+				<header class="card-title"><h2>My music</h2></header>
+				<div class="card-content notopmargin nobottommargin">
+				<iframe src="https://open.spotify.com/embed/playlist/1dfMGfODANrodocj7SLTat" width="100%" height="260" style="width: 100%; height: 260px;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				</div>
+			</section>
 			
 			<section class="card">
 				<header class="card-title"><h2>Social Media</h2></header>
