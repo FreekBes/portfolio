@@ -165,6 +165,7 @@
 						<li><a class="social" title="LinkedIn" href="https://www.linkedin.com/in/freek-bes/" target="_blank"><img class="favicon vertalign" src="imgs/icon-linkedin.png" alt="LinkedIn" /><span class="favicon-name vertalign">freek-bes</span></a></li>
 						<li><a class="social" title="YouTube" href="https://www.youtube.com/user/freekbladtv" target="_blank"><img class="favicon vertalign" src="imgs/icon-yt.png" alt="YouTube" /><span class="favicon-name vertalign">Freek Bes</span></a></li>
 						<li><a class="social" title="Soundcloud" href="https://soundcloud.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-sc.png" alt="Soundcloud" /><span class="favicon-name vertalign">freekbes</span></a></li>
+						<li><a class="social" title="Spotify" href="https://open.spotify.com/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-spotify.png" alt="Spotify" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Trakt.tv" href="https://trakt.tv/users/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-trakt.png" alt="Trakt.tv" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Discogs" href="https://www.discogs.com/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-discogs.png" alt="Discogs" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Steam" href="https://steamcommunity.com/id/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-steam.png" alt="Steam" /><span class="favicon-name vertalign">freekbes</span></a></li>
@@ -177,39 +178,92 @@
 				</div>
 			</section>
 			
-			<!-- The following card might appear improperly indented. This is because it is created on the go, partially by PHP. -->
-			<section class="card">
-				<header class="card-title"><h2>Last played <small><small>via TunePlay</small></small></h2></header>
-				<div class="card-content notopmargin">
-					<?PHP
-						$lastPlayedReq = file_get_contents("https://www.tuneplay.net/get.php?type=track&lastplay&uid=HPZUDPR8AATJ");
-						if ($lastPlayedReq !== false) {
-							$lastPlayed = json_decode($lastPlayedReq, true)["data"][0];
-					?>
-							<table class="yir-table">
-								<tr>
-									<td class="image"><a href="<?PHP echo $lastPlayed["url"]; ?>" style="display: block; width: inherit;" target="_blank" title="Play this <?PHP echo strtolower($lastPlayed["type_text"]); ?> now using TunePlay"><img src="https://www.tuneplay.net/<?PHP echo str_replace("x500.jpg", "x200.jpg", $lastPlayed["cover"]); ?>" style="background: #<?PHP echo $lastPlayed["color"]; ?>;" alt="Cover art" /></a></td>
-									<td class="info">
-										<div class="toptext"><a href="<?PHP echo $lastPlayed["url"]; ?>" target="_blank" title="Play this <?PHP echo strtolower($lastPlayed["type_text"]); ?> now using TunePlay"><?PHP echo $lastPlayed["title"]; ?></a></div>
-										<div class="bottomtext">
-											<?PHP for ($i = 0; $i < count($lastPlayed["artists"]); $i++) {
-												?>
-												<a href="<?PHP echo $lastPlayed["artists"][$i]["url"]; ?>" target="_blank" title="View <?PHP echo stripslashes($lastPlayed["artists"][$i]["name"]); ?>'s profile on TunePlay"><?PHP echo $lastPlayed["artists"][$i]["name"]; ?></a><?PHP if ($i != count($lastPlayed["artists"])-1) { echo ', '; } ?>
-												<?PHP
-											}
-											?>
-										</div>
-										<div class="extratext"><?PHP echo $lastPlayed["type_text"].' played on '.date("l \\t\h\\e jS \of F Y \a\\t h:i A", strtotime($lastPlayed["last_play_listen_timestamp"])); ?></div>
-									</td>
-								</tr>
-							</table>
-					<?PHP 
-						} else {
-							echo '<p style="text-align: center;">Currently unavailable... TunePlay might be down, or a server error occured.</p>';
+			<?PHP
+				require_once("spotifyapi.php");
+				$spotifyData = json_decode(file_get_contents("spotify.json"), true);
+				if ($spotifyData["initialized"] === true) {
+					if ($spotifyData["expires_on"] <= time()) {
+						// refresh access token
+						$ch = curl_init();
+						curl_setopt($ch, CURLOPT_URL,"https://accounts.spotify.com/api/token");
+						curl_setopt($ch, CURLOPT_POST, 1);
+						// $spotifyClientId and $spotifyClientId are set in spotifyapi.php
+						curl_setopt($ch, CURLOPT_USERPWD, $spotifyClientId.":".$spotifyClientId);
+						curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('grant_type' => 'refresh_token', 'refresh_token' => $spotifyData["refresh_token"])));
+						curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+						$response = curl_exec($ch);
+						curl_close($ch);
+						
+						$newData = array();
+						$newData["initialized"] = true;
+						if ($response !== false ) {
+							$jsonResponse = json_decode($response, true);
+							$newData["access_token"] = $jsonResponse["access_token"];
+							$newData["expires_on"] = time() + intval($jsonResponse["expires_in"]);
+							$newData["refresh_token"] = $spotifyData["refresh_token"];
+							file_put_contents("spotify.json", json_encode($newData, JSON_UNESCAPED_UNICODE));
+							$spotifyData = $newData;
 						}
-					?>
-				</div>
-			</section>
+						else {
+							echo '<!-- NOTICE FOR FREEK: COULD NOT REFRESH SPOTIFY AUTHORIZATION -->';
+							$newData["access_token"] = null;
+							$newData["expires_on"] = 0;
+							$newData["refresh_token"] = $spotifyData["refresh_token"];
+							file_put_contents("spotify.json", json_encode($newData, JSON_UNESCAPED_UNICODE));
+							$spotifyData = $newData;
+						}
+					}
+
+					if (!empty($spotifyData["access_token"])) {
+						$ch = curl_init();
+						curl_setopt($ch, CURLOPT_URL,"https://api.spotify.com/v1/me/player/recently-played?limit=1");
+						$authorization = "Authorization: Bearer ".$spotifyData["access_token"];
+						curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: application/json' , $authorization ));
+						curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+						curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+						curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+						$response = curl_exec($ch);
+						curl_close($ch);
+						
+						if ($response !== false ) {
+							$lastPlayed = json_decode($response, true)["items"][0];
+							?>
+							<!-- The following card might appear improperly indented. This is because it is created on the go, partially by PHP. -->
+							<section class="card">
+								<header class="card-title"><h2><span style="vertical-align: baseline;">Last played </span><small style="vertical-align: baseline; font-size: small;">via </small><img src="imgs/logo-spotify.png" style="vertical-align: -4px; height: 16px;" alt="Spotify" /></h2></header>
+								<div class="card-content notopmargin">
+									<table class="yir-table">
+										<tr>
+											<td class="image"><a href="<?PHP echo $lastPlayed["track"]["album"]["external_urls"]["spotify"]; ?>" style="display: block; width: inherit;" target="_blank" title="View album on Spotify"><img src="<?PHP echo $lastPlayed["track"]["album"]["images"][1]["url"]; ?>" style="background: #1DB954;" alt="Cover art" /></a></td>
+											<td class="info">
+												<div class="toptext"><a href="<?PHP echo $lastPlayed["track"]["external_urls"]["spotify"]; ?>" target="_blank" title="Play track on Spotify"><?PHP echo htmlspecialchars($lastPlayed["track"]["name"]); ?></a></div>
+												<div class="bottomtext">
+													<?PHP for ($i = 0; $i < count($lastPlayed["track"]["artists"]); $i++) {
+														?>
+														<a href="<?PHP echo $lastPlayed["track"]["artists"][$i]["external_urls"]["spotify"]; ?>" target="_blank" title="View artist on Spotify"><?PHP echo htmlspecialchars($lastPlayed["track"]["artists"][$i]["name"]); ?></a><?PHP if ($i != count($lastPlayed["track"]["artists"])-1) { echo ', '; } ?>
+														<?PHP
+													}
+													?>
+												</div>
+												<div class="extratext">Track played on <?PHP echo date("l \\t\h\\e jS \of F Y \a\\t h:i A", strtotime($lastPlayed["played_at"])); ?></div>
+											</td>
+										</tr>
+									</table>
+								</div>
+							</section>
+							<?PHP
+						}
+						else {
+							echo '<!-- NOTICE FOR FREEK: COULD NOT FETCH LAST PLAYED TRACK FROM SPOTIFY -->';
+						}
+					}
+				}
+				else {
+			?>
+				<!-- NOTICE FOR FREEK: SPOTIFY AUTHORIZATION WAS NOT INITIALIZED -->
+			<?PHP
+				}
+			?>
 			
 			<section class="card">
 				<header class="card-title"><h2>Last watched <small><small>via Trakt.tv</small></small></h2></header>
