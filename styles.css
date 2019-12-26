@@ -5,13 +5,13 @@ html {
 	margin: 0px;
 	padding: 0px;
 	
-	background: linear-gradient(to bottom, #0000cc, #029cbf);
-	background: -moz-linear-gradient(to bottom, #0000cc, #029cbf);
-	background: -webkit-linear-gradient(to bottom, #0000cc, #029cbf);
-	background: -ie-linear-gradient(to bottom, #0000cc, #029cbf);
-	background: -o-linear-gradient(to bottom, #0000cc, #029cbf);
+	background: linear-gradient(to bottom, #0000cc, #0820ff);
+	background: -moz-linear-gradient(to bottom, #0000cc, #0820ff);
+	background: -webkit-linear-gradient(to bottom, #0000cc, #0820ff);
+	background: -ie-linear-gradient(to bottom, #0000cc, #0820ff);
+	background: -o-linear-gradient(to bottom, #0000cc, #0820ff);
 	background-repeat: no-repeat;
-	background-color: #029cbf;
+	background-color: #0820ff;
 }
 
 body {
