@@ -188,7 +188,7 @@
 						curl_setopt($ch, CURLOPT_URL,"https://accounts.spotify.com/api/token");
 						curl_setopt($ch, CURLOPT_POST, 1);
 						// $spotifyClientId and $spotifyClientId are set in spotifyapi.php
-						curl_setopt($ch, CURLOPT_USERPWD, $spotifyClientId.":".$spotifyClientId);
+						curl_setopt($ch, CURLOPT_USERPWD, $spotifyClientId.":".$spotifyClientSecret);
 						curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('grant_type' => 'refresh_token', 'refresh_token' => $spotifyData["refresh_token"])));
 						curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 						$response = curl_exec($ch);
@@ -197,7 +197,9 @@
 						$newData = array();
 						$newData["initialized"] = true;
 						if ($response !== false ) {
+							echo '<!-- NOTICE FOR FREEK: SPOTIFY AUTHORIZATION TOKEN REFRESHED -->';
 							$jsonResponse = json_decode($response, true);
+							// echo json_encode($jsonResponse, JSON_UNESCAPED_UNICODE|JSON_PRETTY_PRINT);
 							$newData["access_token"] = $jsonResponse["access_token"];
 							$newData["expires_on"] = time() + intval($jsonResponse["expires_in"]);
 							$newData["refresh_token"] = $spotifyData["refresh_token"];
@@ -257,11 +259,12 @@
 							echo '<!-- NOTICE FOR FREEK: COULD NOT FETCH LAST PLAYED TRACK FROM SPOTIFY -->';
 						}
 					}
+					else {
+						echo '<!-- NOTICE FOR FREEK: SPOTIFY ACCESS TOKEN EMPTY -->';
+					}
 				}
 				else {
-			?>
-				<!-- NOTICE FOR FREEK: SPOTIFY AUTHORIZATION WAS NOT INITIALIZED -->
-			<?PHP
+					echo '<!-- NOTICE FOR FREEK: SPOTIFY AUTHORIZATION WAS NOT INITIALIZED -->';
 				}
 			?>
 			

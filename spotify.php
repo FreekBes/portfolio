@@ -28,7 +28,7 @@
         curl_setopt($ch, CURLOPT_URL,"https://accounts.spotify.com/api/token");
         curl_setopt($ch, CURLOPT_POST, 1);
         // $spotifyClientId and $spotifyClientId are set in spotifyapi.php
-        curl_setopt($ch, CURLOPT_USERPWD, $spotifyClientId.":".$spotifyClientId);
+        curl_setopt($ch, CURLOPT_USERPWD, $spotifyClientId.":".$spotifyClientSecret);
         curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query(array('grant_type' => 'authorization_code', 'code' => $_GET['code'], 'redirect_uri' => "https://freekb.es/spotify.php")));
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         $response = curl_exec($ch);
