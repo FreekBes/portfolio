@@ -245,7 +245,7 @@
 													}
 													?>
 												</div>
-												<div class="extratext">Track played on <?PHP echo date("l \\t\h\\e jS \of F Y \a\\t h:i A", strtotime($lastPlayed["played_at"])); ?></div>
+												<div class="extratext">Track played on <?PHP echo date("l \\t\h\\e jS \of F \a\\t H:i", strtotime($lastPlayed["played_at"])); ?> UTC</div>
 											</td>
 										</tr>
 									</table>
