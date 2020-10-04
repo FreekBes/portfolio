@@ -104,7 +104,7 @@
 						<figure>
 							<img id="me" src="imgs/me.jpg" alt="Freek Bes" />
 						</figure>
-						<p>Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames, producing music, and taking pictures.<br><br>This is my little portfolio on the Internet, which includes links to my projects and social media. If you'd like to see my work experience, schooling and other stuff, please check my <a href="https://www.linkedin.com/in/freek-bes/" target="_blank">LinkedIn</a> instead.</p>
+						<p>Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames, producing music, and taking pictures. Currently attending Codam Coding College, which is part of the <a href="https://en.wikipedia.org/wiki/42_(school)" target="_blank">42 Network</a>.<br><br>This is my little portfolio on the Internet, which includes links to my projects and social media. If you'd like to see my work experience, schooling and other stuff, please check my <a href="https://www.linkedin.com/in/freek-bes/" target="_blank">LinkedIn</a> instead.</p>
 					</div>
 				</div>
 			</section>
@@ -136,7 +136,7 @@
 						</figure>
 						<div class="projectdetails">
 							<a href="https://github.com/FreekBes/insta_reddit_bot" target="_blank"><h3>me_irl_bot</h3></a>
-							<span class="projectinfo">A bot which automatically pulls posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploads them to Instagram. It had over 200k followers, until Instagram banned the original account.</span>
+							<span class="projectinfo">A bot which automatically pulled posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploaded them to Instagram. It had over 200k followers, until Instagram banned the original account.</span>
 						</div>
 					</div>
 				</div>
@@ -172,9 +172,9 @@
 						<li><a class="social" title="Nintendo Switch Online" href="javascript:prompt('Add me on your Nintendo Switch!', 'SW-4217-5410-8236')" target="_self"><img class="favicon vertalign" src="imgs/icon-switch.png" alt="Switch" /><span class="favicon-name vertalign">SW-4217-5410-8236</span></a></li>
 						<li><a class="social" title="GitHub" href="https://github.com/FreekBes" target="_blank"><img class="favicon vertalign" src="imgs/icon-github.png" alt="Github" /><span class="favicon-name vertalign">FreekBes</span></a></li>
 						<li><a class="social" title="TunePlay" href="https://www.tuneplay.net/?type=user&id=HPZUDPR8AATJ" target="_blank"><img class="favicon vertalign" src="imgs/icon-tp.png" alt="TunePlay" /><span class="favicon-name vertalign">Freek Bes</span></a></li>
-						<li><a class="social" title="Keybase" href="https://keybase.io/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-keybase.png" alt="Keybase" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Stack Overflow" href="https://stackoverflow.com/users/story/9347237" target="_blank"><img class="favicon vertalign" src="imgs/icon-stackoverflow.png" alt="Stack Overflow" /><span class="favicon-name vertalign">freek-bes</span></a></li>
 						<li><a class="social" title="Reddit" href="https://www.reddit.com/user/CraftingTimes/" target="_blank"><img class="favicon vertalign" src="imgs/icon-reddit.png" alt="Reddit" /><span class="favicon-name vertalign">CraftingTimes</span></a></li>
+						<li><a class="social" title="Twitch" href="https://www.twitch.tv/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-twitch.png" alt="Twitch" /><span class="favicon-name vertalign">freekbes</span></a></li>
 					</ul>
 				</div>
 			</section>
