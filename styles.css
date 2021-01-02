@@ -47,7 +47,7 @@ img {
 	display: block;
 	margin: 32px auto;
 	max-width: 604px;
-	padding: 0px 16px;
+	padding: 0px 16px 32px 16px;
 	border-radius: 8px;
 }
 
@@ -419,5 +419,9 @@ table.yir-table td {
 	
 	.extratext {
 		font-size: 11px;
+	}
+
+	.content {
+		padding: 0px 16px 16px 16px;
 	}
 }
