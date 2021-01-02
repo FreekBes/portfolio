@@ -118,7 +118,7 @@
 						</figure>
 						<div class="projectdetails">
 							<a href="/monospace/" target="_blank"><h3>Monospace</h3></a>
-							<span class="projectinfo">I release trance music on various streaming platforms as "Monospace".<br/>Scroll down for a playlist on Spotify.</span>
+							<span class="projectinfo">I release trance music on various streaming platforms as <i>Monospace</i>.<br/>Scroll down for a playlist on Spotify.</span>
 						</div>
 					</div>
 					<div class="project">
@@ -127,7 +127,8 @@
 						</figure>
 						<div class="projectdetails">
 							<a href="https://www.tuneplay.net/" target="_blank"><h3>TunePlay</h3></a>
-							<span class="projectinfo">An open music player which plays music from YouTube, Soundcloud, Deezer, Mixcloud and Spotify. It's available on the web, Windows and Android.</span>
+							<small class="isnomore">No longer accessible</small><br>
+							<span class="projectinfo">An open music player which plays music from YouTube, Soundcloud, Deezer, Mixcloud and Spotify. It was available on the web, Windows and Android.</span>
 						</div>
 					</div>
 					<div class="project">
@@ -136,7 +137,8 @@
 						</figure>
 						<div class="projectdetails">
 							<a href="https://github.com/FreekBes/insta_reddit_bot" target="_blank"><h3>me_irl_bot</h3></a>
-							<span class="projectinfo">A bot which automatically pulled posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploaded them to Instagram. It had over 200k followers, until Instagram banned the original account.</span>
+							<small class="isnomore">Banned by Instagram</small><br>
+							<span class="projectinfo">A bot which automatically pulled posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploaded them to Instagram. It had over 200.000 followers.</span>
 						</div>
 					</div>
 				</div>
@@ -163,17 +165,16 @@
 						<li><a class="social" title="Instagram" href="https://www.instagram.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-ig.png" alt="Instagram" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Twitter" href="https://www.twitter.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-twitter.png" alt="Twitter" /><span class="favicon-name vertalign">FreekBes</span></a></li>
 						<li><a class="social" title="LinkedIn" href="https://www.linkedin.com/in/freek-bes/" target="_blank"><img class="favicon vertalign" src="imgs/icon-linkedin.png" alt="LinkedIn" /><span class="favicon-name vertalign">freek-bes</span></a></li>
-						<li><a class="social" title="YouTube" href="https://www.youtube.com/user/freekbladtv" target="_blank"><img class="favicon vertalign" src="imgs/icon-yt.png" alt="YouTube" /><span class="favicon-name vertalign">Freek Bes</span></a></li>
-						<li><a class="social" title="Soundcloud" href="https://soundcloud.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-sc.png" alt="Soundcloud" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Spotify" href="https://open.spotify.com/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-spotify.png" alt="Spotify" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Trakt.tv" href="https://trakt.tv/users/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-trakt.png" alt="Trakt.tv" /><span class="favicon-name vertalign">freekbes</span></a></li>
+						<li><a class="social" title="Last.fm" href="https://www.last.fm/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-lastfm.png" alt="Last.fm" /><span class="favicon-name vertalign">freekbes</span></a></li>
+						<li><a class="social" title="YouTube" href="https://www.youtube.com/user/freekbladtv" target="_blank"><img class="favicon vertalign" src="imgs/icon-yt.png" alt="YouTube" /><span class="favicon-name vertalign">Freek Bes</span></a></li>
+						<li><a class="social" title="Soundcloud" href="https://soundcloud.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-sc.png" alt="Soundcloud" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Discogs" href="https://www.discogs.com/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-discogs.png" alt="Discogs" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Steam" href="https://steamcommunity.com/id/freekeh99" target="_blank"><img class="favicon vertalign" src="imgs/icon-steam.png" alt="Steam" /><span class="favicon-name vertalign">Freekeh99</span></a></li>
 						<li><a class="social" title="Nintendo Switch Online" href="javascript:prompt('Add me on your Nintendo Switch!', 'SW-4217-5410-8236')" target="_self"><img class="favicon vertalign" src="imgs/icon-switch.png" alt="Switch" /><span class="favicon-name vertalign">SW-4217-5410-8236</span></a></li>
 						<li><a class="social" title="GitHub" href="https://github.com/FreekBes" target="_blank"><img class="favicon vertalign" src="imgs/icon-github.png" alt="Github" /><span class="favicon-name vertalign">FreekBes</span></a></li>
-						<li><a class="social" title="TunePlay" href="https://www.tuneplay.net/?type=user&id=HPZUDPR8AATJ" target="_blank"><img class="favicon vertalign" src="imgs/icon-tp.png" alt="TunePlay" /><span class="favicon-name vertalign">Freek Bes</span></a></li>
 						<li><a class="social" title="Stack Overflow" href="https://stackoverflow.com/users/story/9347237" target="_blank"><img class="favicon vertalign" src="imgs/icon-stackoverflow.png" alt="Stack Overflow" /><span class="favicon-name vertalign">freek-bes</span></a></li>
-						<li><a class="social" title="Reddit" href="https://www.reddit.com/user/CraftingTimes/" target="_blank"><img class="favicon vertalign" src="imgs/icon-reddit.png" alt="Reddit" /><span class="favicon-name vertalign">CraftingTimes</span></a></li>
 						<li><a class="social" title="Twitch" href="https://www.twitch.tv/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-twitch.png" alt="Twitch" /><span class="favicon-name vertalign">freekbes</span></a></li>
 					</ul>
 				</div>
