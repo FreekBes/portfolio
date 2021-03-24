@@ -149,6 +149,7 @@ figure {
 .project, .aboutme {
 	display: table;
 	width: 100%;
+	margin: 8px 0px;
 }
 
 .project figure {
@@ -354,6 +355,10 @@ table.yir-table td {
 		display: block;
 		padding: 8px;
 		text-align: center;
+	}
+
+	.project {
+		margin: 11px 3px;
 	}
 	
 	.project figure {
