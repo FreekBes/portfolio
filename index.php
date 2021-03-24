@@ -123,22 +123,30 @@
 					</div>
 					<div class="project">
 						<figure>
+							<img class="project-img" src="imgs/project-meirlbot-icon.png" alt="me_irl_bot icon" />
+						</figure>
+						<div class="projectdetails">
+							<a href="https://instagram.com/me.irl.bot" target="_blank"><h3>me.irl.bot</h3></a>
+							<span class="projectinfo">A bot which automatically pulls posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploads them to Instagram. A previous version had over 200.000 followers.</span>
+						</div>
+					</div>
+					<div class="project">
+						<figure>
+							<img class="project-img" src="imgs/project-spotify-icon.png" alt="spotify web controller icon" />
+						</figure>
+						<div class="projectdetails">
+							<a href="https://freekb.es/spotify/#" target="_blank"><h3>Spotify Remote Web Controller</h3></a>
+							<span class="projectinfo">A controller for Spotify playback, on the web. Targeted for Android GO. Built from scratch in 2 days.</span>
+						</div>
+					</div>
+					<div class="project">
+						<figure>
 							<img class="project-img" src="imgs/project-tuneplay-icon.png" alt="TunePlay icon" />
 						</figure>
 						<div class="projectdetails">
 							<a href="https://www.tuneplay.net/" target="_blank"><h3>TunePlay</h3></a>
 							<small class="isnomore">No longer accessible</small><br>
-							<span class="projectinfo">An open music player which plays music from YouTube, Soundcloud, Deezer, Mixcloud and Spotify. It was available on the web, Windows and Android.</span>
-						</div>
-					</div>
-					<div class="project">
-						<figure>
-							<img class="project-img" src="imgs/project-meirlbot-icon.png" alt="me_irl_bot icon" />
-						</figure>
-						<div class="projectdetails">
-							<a href="https://github.com/FreekBes/insta_reddit_bot" target="_blank"><h3>me_irl_bot</h3></a>
-							<small class="isnomore">Banned by Instagram</small><br>
-							<span class="projectinfo">A bot which automatically pulled posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploaded them to Instagram. It had over 200.000 followers.</span>
+							<span class="projectinfo">An open music player which played music from YouTube, Soundcloud, Deezer, Mixcloud and Spotify. It was available on the web, Windows and Android.</span>
 						</div>
 					</div>
 				</div>
