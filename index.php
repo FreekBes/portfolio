@@ -1,23 +1,6 @@
 <?PHP
 	// error_reporting(E_ALL); ini_set('display_errors', 1);
 	
-	if(empty($_SERVER["HTTPS"]) || $_SERVER['HTTPS'] !== 'on') {
-		header("Location: https://".$_SERVER["HTTP_HOST"].$_SERVER["REQUEST_URI"], true, 301);
-		exit();
-	}
-	else {
-		header('Strict-Transport-Security: max-age=31536000');
-	}
-	
-	// allowed URLs for connection
-	$allowedUrls = [
-		"freekb.es"
-	];
-	if (!in_array($_SERVER["HTTP_HOST"], $allowedUrls)) {
-		header("Location: https://freekb.es".$_SERVER["REQUEST_URI"], true, 301);
-		exit();
-	}
-	
 	// FROM https://stackoverflow.com/questions/3776682/php-calculate-age
 	//date in mm/dd/yyyy format; or it can be in other formats as well
 	$birthDate = "10/21/1999";
