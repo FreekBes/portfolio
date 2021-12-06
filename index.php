@@ -106,11 +106,11 @@
 					</div>
 					<div class="project">
 						<figure>
-							<img class="project-img" src="imgs/project-meirlbot-icon.png" alt="me_irl_bot icon" />
+							<img class="project-img" src="imgs/project-improvedintra-icon.png" alt="Improved Intra icon" />
 						</figure>
 						<div class="projectdetails">
-							<a href="https://instagram.com/me.irl.bot" target="_blank"><h3>me.irl.bot</h3></a>
-							<span class="projectinfo">A bot which automatically pulls posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploads them to Instagram. A previous version had over 200.000 followers.</span>
+							<a href="https://chrome.google.com/webstore/detail/hmflgigeigiejaogcgamkecmlibcpdgo" target="_blank"><h3>Improved Intra 42</h3></a>
+							<span class="projectinfo">I'm currently working hard on a project that improves 42's Intra page (an internal website of the school I'm attending) by using a browser extension.</span>
 						</div>
 					</div>
 					<div class="project">
@@ -120,6 +120,16 @@
 						<div class="projectdetails">
 							<a href="https://freekb.es/spotify/#" target="_blank"><h3>Spotify Remote Web Controller</h3></a>
 							<span class="projectinfo">A controller for Spotify playback, on the web. Targeted for Android GO. Built from scratch in 2 days.</span>
+						</div>
+					</div>
+					<div class="project">
+						<figure>
+							<img class="project-img" src="imgs/project-meirlbot-icon.png" alt="me_irl_bot icon" />
+						</figure>
+						<div class="projectdetails">
+							<a href="https://github.com/FreekBes/insta_reddit_bot" target="_blank"><h3>me_irl_bot</h3></a>
+							<small class="isnomore">Deactivated by Instagram</small><br>
+							<span class="projectinfo">A bot which automatically pulled posts from <a href="https://www.reddit.com/r/me_irl" target="_blank">/r/me_irl</a> multiple times an hour, and uploaded them to Instagram. It had over 200.000 followers.</span>
 						</div>
 					</div>
 					<div class="project">
