@@ -1,6 +1,6 @@
 <?PHP
 	// error_reporting(E_ALL); ini_set('display_errors', 1);
-	
+
 	// FROM https://stackoverflow.com/questions/3776682/php-calculate-age
 	//date in mm/dd/yyyy format; or it can be in other formats as well
 	$birthDate = "10/21/1999";
@@ -27,7 +27,7 @@
 		<meta name="robots" content="all" />
 		<meta name="language" content="EN" />
 		<meta name="theme-color" content="#0000CC" />
-		
+
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-128984799-1"></script>
 		<script>
@@ -37,7 +37,7 @@
 
 		gtag('config', 'UA-128984799-1');
 		</script>
-		
+
 		<meta name="og:description" property="og:description" content="Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames and taking pictures." />
 		<meta property="og:description" property="og:description" content="Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames and taking pictures." />
 		<meta name="og:type" property="og:type" content="website" />
@@ -57,7 +57,7 @@
 		<meta property="og:url" property="og:url" content="https://freekb.es/" />
 		<meta name="og:site_name" property="og:site_name" content="Freek Bes" />
 		<meta property="og:site_name" property="og:site_name" content="Freek Bes" />
-		
+
 		<meta name="twitter:card" content="summary" />
 		<meta name="twitter:title" content="Freek Bes" />
 		<meta name="twitter:description" content="Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames and taking pictures." />
@@ -65,7 +65,7 @@
 		<meta name="twitter:image:alt" content="Image of Freek Bes" />
 		<meta name="twitter:creator" content="@FreekBes" />
 		<meta name="twitter:creator:id" content="@FreekBes" />
-		
+
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="icon" type="image/ico" href="favicon.ico" />
@@ -79,7 +79,7 @@
 			<header>
 				<h1>Freek Bes</h1>
 			</header>
-			
+
 			<section class="card">
 				<header class="card-title"><h2>About me</h2></header>
 				<div class="card-content">
@@ -91,7 +91,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section class="card">
 				<header class="card-title"><h2>Projects</h2></header>
 				<div class="card-content">
@@ -110,7 +110,7 @@
 						</figure>
 						<div class="projectdetails">
 							<a href="https://chrome.google.com/webstore/detail/hmflgigeigiejaogcgamkecmlibcpdgo" target="_blank"><h3>Improved Intra 42</h3></a>
-							<span class="projectinfo">I'm currently working hard on a project that improves 42's Intra page (an internal website of the school I'm attending) by using a browser extension.</span>
+							<span class="projectinfo">I created a browser extension that improves 42's Intra page (an internal website of the school I'm attending), used by over 400 students.</span>
 						</div>
 					</div>
 					<div class="project">
@@ -144,7 +144,7 @@
 					</div>
 				</div>
 			</section>
-			
+
 			<section class="card">
 				<header class="card-title"><h2>More projects</h2></header>
 				<div class="card-content">
@@ -158,7 +158,7 @@
 				<iframe src="https://open.spotify.com/embed/playlist/1dfMGfODANrodocj7SLTat" width="100%" height="260" style="width: 100%; height: 260px;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 				</div>
 			</section>
-			
+
 			<section class="card">
 				<header class="card-title"><h2>Social Media</h2></header>
 				<div class="card-content">
@@ -180,7 +180,7 @@
 					</ul>
 				</div>
 			</section>
-			
+
 			<?PHP
 				require_once("spotifyapi.php");
 				$spotifyData = json_decode(file_get_contents("spotify.json"), true);
@@ -196,7 +196,7 @@
 						curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 						$response = curl_exec($ch);
 						curl_close($ch);
-						
+
 						$newData = array();
 						$newData["initialized"] = true;
 						if ($response !== false ) {
@@ -229,7 +229,7 @@
 						curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 						$response = curl_exec($ch);
 						curl_close($ch);
-						
+
 						if ($response !== false ) {
 							$lastPlayed = json_decode($response, true)["items"][0];
 							?>
@@ -270,7 +270,7 @@
 					echo '<!-- NOTICE FOR FREEK: SPOTIFY AUTHORIZATION WAS NOT INITIALIZED -->';
 				}
 			?>
-			
+
 			<section class="card">
 				<header class="card-title"><h2>Last watched <small><small>via Trakt.tv</small></small></h2></header>
 				<div class="card-content notopmargin nobottommargin">
