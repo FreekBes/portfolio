@@ -110,7 +110,7 @@
 						</figure>
 						<div class="projectdetails">
 							<a href="https://chrome.google.com/webstore/detail/hmflgigeigiejaogcgamkecmlibcpdgo" target="_blank"><h3>Improved Intra 42</h3></a>
-							<span class="projectinfo">I created a browser extension that improves 42's Intra page (an internal website of the school I'm attending), used by over 400 students.</span>
+							<span class="projectinfo">I created a browser extension that improves 42's Intra page (an internal website of the school I'm attending), used weekly by over 1,000 students.</span>
 						</div>
 					</div>
 					<div class="project">
