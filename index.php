@@ -87,7 +87,7 @@
 						<figure>
 							<img id="me" src="imgs/me.jpg" alt="Freek Bes" />
 						</figure>
-						<p>Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames, producing music, and taking pictures. Currently attending Codam Coding College, which is part of the <a href="https://en.wikipedia.org/wiki/42_(school)" target="_blank">42 Network</a>.<br><br>This is my little portfolio on the Internet, which includes links to my projects and social media. If you'd like to see my work experience, schooling and other stuff, please check my <a href="https://www.linkedin.com/in/freek-bes/" target="_blank">LinkedIn</a> instead.</p>
+						<p>Hi! My name is Freek. I'm a <?PHP echo $age; ?> years old guy who enjoys programming, playing videogames, producing music, and taking pictures. Currently working at Codam Coding College, which is part of the <a href="https://en.wikipedia.org/wiki/42_(school)" target="_blank">42 Network</a>.<br><br>This is my little portfolio on the Internet, which includes links to my projects and social media. If you'd like to see my work experience, schooling and other stuff, please check my <a href="https://www.linkedin.com/in/freek-bes/" target="_blank">LinkedIn</a> instead.</p>
 					</div>
 				</div>
 			</section>
@@ -110,7 +110,7 @@
 						</figure>
 						<div class="projectdetails">
 							<a href="https://chrome.google.com/webstore/detail/hmflgigeigiejaogcgamkecmlibcpdgo" target="_blank"><h3>Improved Intra 42</h3></a>
-							<span class="projectinfo">I created a browser extension that improves 42's Intra page (an internal website of the school I'm attending), used weekly by over 1,000 students.</span>
+							<span class="projectinfo">I created a browser extension that improves 42's Intra page (an internal website of the school I'm attending), used weekly by over 4,000 students.</span>
 						</div>
 					</div>
 					<div class="project">
@@ -155,7 +155,7 @@
 			<section class="card">
 				<header class="card-title"><h2>My music</h2></header>
 				<div class="card-content notopmargin nobottommargin">
-				<iframe src="https://open.spotify.com/embed/playlist/1dfMGfODANrodocj7SLTat" width="100%" height="260" style="width: 100%; height: 260px;" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+				<iframe src="https://open.spotify.com/embed/playlist/1dfMGfODANrodocj7SLTat" width="100%" height="500" style="width: 100%; height: 500px; background: #C02020;" frameborder="0" allowtransparency="false" allow="encrypted-media"></iframe>
 				</div>
 			</section>
 
@@ -163,7 +163,7 @@
 				<header class="card-title"><h2>Social Media</h2></header>
 				<div class="card-content">
 					<ul class="nobullets floaty">
-						<li><a class="social" title="Instagram" href="https://www.instagram.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-ig.png" alt="Instagram" /><span class="favicon-name vertalign">freekbes</span></a></li>
+						<!-- <li><a class="social" title="Instagram" href="https://www.instagram.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-ig.png" alt="Instagram" /><span class="favicon-name vertalign">freekbes</span></a></li> -->
 						<li><a class="social" title="Twitter" href="https://www.twitter.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-twitter.png" alt="Twitter" /><span class="favicon-name vertalign">FreekBes</span></a></li>
 						<li><a class="social" title="LinkedIn" href="https://www.linkedin.com/in/freek-bes/" target="_blank"><img class="favicon vertalign" src="imgs/icon-linkedin.png" alt="LinkedIn" /><span class="favicon-name vertalign">freek-bes</span></a></li>
 						<li><a class="social" title="Spotify" href="https://open.spotify.com/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-spotify.png" alt="Spotify" /><span class="favicon-name vertalign">freekbes</span></a></li>
@@ -233,7 +233,7 @@
 						if ($response !== false ) {
 							$lastPlayed = json_decode($response, true)["items"][0];
 							?>
-							<!-- The following card might appear improperly indented. This is because it is created on the go, partially by PHP. -->
+							<!-- The following card might appear improperly indented. This is because the HTML code is created on the server-side, by PHP. -->
 							<section class="card">
 								<header class="card-title"><h2><span style="vertical-align: baseline;">Last played </span><small style="vertical-align: baseline; font-size: small;">via </small><img src="imgs/logo-spotify.png" style="vertical-align: -4px; height: 16px;" alt="Spotify" /></h2></header>
 								<div class="card-content notopmargin">
