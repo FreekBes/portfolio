@@ -167,7 +167,7 @@
 						<li><a class="social" title="Twitter" href="https://www.twitter.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-twitter.png" alt="Twitter" /><span class="favicon-name vertalign">FreekBes</span></a></li>
 						<li><a class="social" title="LinkedIn" href="https://www.linkedin.com/in/freek-bes/" target="_blank"><img class="favicon vertalign" src="imgs/icon-linkedin.png" alt="LinkedIn" /><span class="favicon-name vertalign">freek-bes</span></a></li>
 						<li><a class="social" title="Spotify" href="https://open.spotify.com/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-spotify.png" alt="Spotify" /><span class="favicon-name vertalign">freekbes</span></a></li>
-						<li><a class="social" title="Trakt.tv" href="https://trakt.tv/users/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-trakt.png" alt="Trakt.tv" /><span class="favicon-name vertalign">freekbes</span></a></li>
+						<li><a class="social" title="Trakt.tv" href="https://trakt.tv/users/freekeh99" target="_blank"><img class="favicon vertalign" src="imgs/icon-trakt.png" alt="Trakt.tv" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Last.fm" href="https://www.last.fm/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-lastfm.png" alt="Last.fm" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="YouTube" href="https://www.youtube.com/user/freekbladtv" target="_blank"><img class="favicon vertalign" src="imgs/icon-yt.png" alt="YouTube" /><span class="favicon-name vertalign">Freek Bes</span></a></li>
 						<li><a class="social" title="Soundcloud" href="https://soundcloud.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-sc.png" alt="Soundcloud" /><span class="favicon-name vertalign">freekbes</span></a></li>
@@ -274,7 +274,7 @@
 			<section class="card">
 				<header class="card-title"><h2>Last watched <small><small>via Trakt.tv</small></small></h2></header>
 				<div class="card-content notopmargin nobottommargin">
-					<a href="https://trakt.tv/users/freekbes" target="_blank" style="display: block;"><img style="width: 100%; background: #000000;" alt="This widget doesn't seem to be working right now..." src="https://widgets.trakt.tv/users/99c23c354770e5e30080302e27c89ccc/watched/banner@2x.jpg?image_only=1" /></a>
+					<a href="https://trakt.tv/users/freekeh99" target="_blank" style="display: block;"><img style="width: 100%; background: #000000;" alt="This widget doesn't seem to be working right now..." src="https://widgets.trakt.tv/users/99c23c354770e5e30080302e27c89ccc/watched/banner@2x.jpg?image_only=1" /></a>
 				</div>
 			</section>
 		</main>
