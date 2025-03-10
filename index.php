@@ -164,7 +164,7 @@
 				<div class="card-content">
 					<ul class="nobullets floaty">
 						<li><a class="social" title="Instagram" href="https://www.instagram.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-ig.png" alt="Instagram" /><span class="favicon-name vertalign">freekbes</span></a></li>
-						<li><a class="social" title="Twitter" href="https://www.twitter.com/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-twitter.png" alt="Twitter" /><span class="favicon-name vertalign">FreekBes</span></a></li>
+						<li><a class="social" title="Bluesky" href="https://bsky.app/profile/freekb.es" target="_blank"><img class="favicon vertalign" src="imgs/icon-bluesky.png" alt="Bluesky" /><span class="favicon-name vertalign">freekb.es</span></a></li>
 						<li><a class="social" title="LinkedIn" href="https://www.linkedin.com/in/freek-bes/" target="_blank"><img class="favicon vertalign" src="imgs/icon-linkedin.png" alt="LinkedIn" /><span class="favicon-name vertalign">freek-bes</span></a></li>
 						<li><a class="social" title="Spotify" href="https://open.spotify.com/user/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-spotify.png" alt="Spotify" /><span class="favicon-name vertalign">freekbes</span></a></li>
 						<li><a class="social" title="Trakt.tv" href="https://trakt.tv/users/freekeh99" target="_blank"><img class="favicon vertalign" src="imgs/icon-trakt.png" alt="Trakt.tv" /><span class="favicon-name vertalign">freekbes</span></a></li>
