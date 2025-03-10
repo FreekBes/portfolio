@@ -175,7 +175,6 @@
 						<li><a class="social" title="Steam" href="https://steamcommunity.com/id/freekeh99" target="_blank"><img class="favicon vertalign" src="imgs/icon-steam.png" alt="Steam" /><span class="favicon-name vertalign">Freekeh99</span></a></li>
 						<li><a class="social" title="Nintendo Switch Online" href="javascript:prompt('Add me on your Nintendo Switch!', 'SW-4217-5410-8236')" target="_self"><img class="favicon vertalign" src="imgs/icon-switch.png" alt="Switch" /><span class="favicon-name vertalign">SW-4217-5410-8236</span></a></li>
 						<li><a class="social" title="GitHub" href="https://github.com/FreekBes" target="_blank"><img class="favicon vertalign" src="imgs/icon-github.png" alt="Github" /><span class="favicon-name vertalign">FreekBes</span></a></li>
-						<li><a class="social" title="Stack Overflow" href="https://stackoverflow.com/users/story/9347237" target="_blank"><img class="favicon vertalign" src="imgs/icon-stackoverflow.png" alt="Stack Overflow" /><span class="favicon-name vertalign">freek-bes</span></a></li>
 						<li><a class="social" title="Twitch" href="https://www.twitch.tv/freekbes" target="_blank"><img class="favicon vertalign" src="imgs/icon-twitch.png" alt="Twitch" /><span class="favicon-name vertalign">freekbes</span></a></li>
 					</ul>
 				</div>
